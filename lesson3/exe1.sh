@@ -1,9 +1,9 @@
 #! /bin/bash
 function file_count()
 {
-COUNT=$(ls -l | wc -l)
-ANS=$((COUNT - 1))
-echo "This folder have $ANS file/files"
+LOCAL_COUNT=$(ls -l | wc -l)
+LOCAL_ANS=$((LOCAL_COUNT - 1))
+echo "This folder have $LOCAL_ANS file/files"
 }
 file_count
 <<COMMENT
